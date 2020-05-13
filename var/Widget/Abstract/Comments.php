@@ -150,7 +150,7 @@ class Widget_Abstract_Comments extends Widget_Abstract
      */
     public function select()
     {
-        return $this->db->select('table.comments.coid', 'table.comments.cid', 'table.comments.author', 'table.comments.mail', 'table.comments.url', 'table.comments.ip',
+        return $this->db->select('table.comments.coid', 'table.comments.cid', 'table.comments.author', 'table.comments.mail', 'table.comments.qqnum', 'table.comments.url', 'table.comments.ip',
         'table.comments.authorId', 'table.comments.ownerId', 'table.comments.agent', 'table.comments.text', 'table.comments.type', 'table.comments.status', 'table.comments.parent', 'table.comments.created')
         ->from('table.comments');
     }
@@ -172,6 +172,7 @@ class Widget_Abstract_Comments extends Widget_Abstract
             'authorId'  =>  empty($comment['authorId']) ? 0 : $comment['authorId'],
             'ownerId'   =>  empty($comment['ownerId']) ? 0 : $comment['ownerId'],
             'mail'      =>  !isset($comment['mail']) || strlen($comment['mail']) === 0 ? NULL : $comment['mail'],
+            'qqnum'      =>  !isset($comment['qqnum']) || strlen($comment['qqnum']) === 0 ? NULL : $comment['qqnum'],
             'url'       =>  !isset($comment['url']) || strlen($comment['url']) === 0 ? NULL : $comment['url'],
             'ip'        =>  !isset($comment['ip']) || strlen($comment['ip']) === 0 ? $this->request->getIp() : $comment['ip'],
             'agent'     =>  !isset($comment['agent']) || strlen($comment['agent']) === 0 ? $_SERVER["HTTP_USER_AGENT"] : $comment['agent'],
@@ -227,6 +228,7 @@ class Widget_Abstract_Comments extends Widget_Abstract
         $preUpdateStruct = array(
             'author'    =>  !isset($comment['author']) || strlen($comment['author']) === 0 ? NULL : $comment['author'],
             'mail'      =>  !isset($comment['mail']) || strlen($comment['mail']) === 0 ? NULL : $comment['mail'],
+            'qqnum'      =>  !isset($comment['qqnum']) || strlen($comment['qqnum']) === 0 ? NULL : $comment['qqnum'],
             'url'       =>  !isset($comment['url']) || strlen($comment['url']) === 0 ? NULL : $comment['url'],
             'text'      =>  !isset($comment['text']) || strlen($comment['text']) === 0 ? NULL : $comment['text'],
             'status'    =>  empty($comment['status']) ? 'approved' : $comment['status'],
@@ -399,7 +401,7 @@ class Widget_Abstract_Comments extends Widget_Abstract
             
             $this->pluginHandle(__CLASS__)->trigger($plugged)->gravatar($size, $rating, $default, $this);
             if (!$plugged) {
-                $url = Typecho_Common::gravatarUrl($this->mail, $size, $rating, $default, $this->request->isSecure());
+                $url = Typecho_Common::gravatarUrl($this->qqnum, $size, $rating, $default, $this->request->isSecure());
                 echo '<img class="avatar" src="' . $url . '" alt="' .
                 $this->author . '" width="' . $size . '" height="' . $size . '" />';
             }

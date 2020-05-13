@@ -266,6 +266,7 @@ class Widget_Comments_Edit extends Widget_Abstract_Comments implements Widget_In
             $comment['text'] = $this->request->text;
             $comment['author'] = $this->request->filter('strip_tags', 'trim', 'xss')->author;
             $comment['mail'] = $this->request->filter('strip_tags', 'trim', 'xss')->mail;
+            $comment['qqnum'] = $this->request->filter('strip_tags', 'trim', 'xss')->qqnum;
             $comment['url'] = $this->request->filter('url')->url;
             
             /** 评论插件接口 */
@@ -317,6 +318,7 @@ class Widget_Comments_Edit extends Widget_Abstract_Comments implements Widget_In
                 'type'      =>  'comment',
                 'author'    =>  $this->user->screenName,
                 'mail'      =>  $this->user->mail,
+                'qqnum'      =>  $this->user->qqnum,
                 'url'       =>  $this->user->url,
                 'parent'    =>  $coid,
                 'text'      =>  $this->request->text,

@@ -61,7 +61,8 @@ function _n($single, $plural, $number) {
 class Typecho_Common
 {
     /** 程序版本 */
-    const VERSION = '1.2/18.10.23';
+    /*const VERSION = '1.2/18.10.23';*/
+    const VERSION = '2.2/20.05.13';
 
     /**
      * 允许的属性
@@ -973,35 +974,59 @@ EOF;
         return rtrim($prefix, '/') . '/' . str_replace('//', '/', ltrim($path, '/'));
     }
 
+                                                    /***
+                                                     *****注释掉获取gravatar头像
+                                                     * 获取gravatar头像地址 
+                                                     * 
+                                                     * @param string $mail 
+                                                     * @param int $size 
+                                                     * @param string $rating 
+                                                     * @param string $default 
+                                                     * @param bool $isSecure 
+                                                     * @return string
+                                                    public static function gravatarUrl($mail, $size, $rating, $default, $isSecure = false)
+                                                    {
+                                                        if (defined('__TYPECHO_GRAVATAR_PREFIX__')) {
+                                                            $url = __TYPECHO_GRAVATAR_PREFIX__;
+                                                        } else {
+                                                            $url = $isSecure ? 'https://secure.gravatar.com' : 'http://www.gravatar.com';
+                                                            $url .= '/avatar/';
+                                                        }
+
+                                                        if (!empty($mail)) {
+                                                            $url .= md5(strtolower(trim($mail)));
+                                                        }
+
+                                                        $url .= '?s=' . $size;
+                                                        $url .= '&amp;r=' . $rating;
+                                                        $url .= '&amp;d=' . $default;
+
+                                                        return $url;
+                                                    }*/
     /**
-     * 获取gravatar头像地址 
+     * 获取QQ头像地址 
      * 
-     * @param string $mail 
+     * @param string $qqnum 
      * @param int $size 
-     * @param string $rating 
-     * @param string $default 
-     * @param bool $isSecure 
      * @return string
      */
-    public static function gravatarUrl($mail, $size, $rating, $default, $isSecure = false)
+    public static function gravatarUrl($qqnum, $size)
     {
         if (defined('__TYPECHO_GRAVATAR_PREFIX__')) {
             $url = __TYPECHO_GRAVATAR_PREFIX__;
         } else {
-            $url = $isSecure ? 'https://secure.gravatar.com' : 'http://www.gravatar.com';
-            $url .= '/avatar/';
+            $url = 'https://q.qlogo.cn';
+            $url .= '/g?b=qq&nk=';
         }
 
-        if (!empty($mail)) {
-            $url .= md5(strtolower(trim($mail)));
+        if (!empty($qqnum)) {
+            $url .= $qqnum;
         }
-
-        $url .= '?s=' . $size;
-        $url .= '&amp;r=' . $rating;
-        $url .= '&amp;d=' . $default;
-
+        $url .= '&s=' . $size;
         return $url;
     }
+
+
 
     /**
      * 给javascript赋值加入扰码设计 

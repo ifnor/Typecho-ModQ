@@ -25,6 +25,10 @@
                 <label for="author" class="required"><?php _e('称呼'); ?></label>
     			<input type="text" name="author" id="author" class="text" value="<?php $this->remember('author'); ?>" required />
     		</p>
+            <p>
+                <label for="qqnum"<?php if ($this->options->commentsRequireqqnum): ?> class="required"<?php endif; ?>><?php _e('QQ号'); ?></label>
+                <input type="number" name="qqnum" id="qqnum" class="text" value="<?php $this->remember('qqnum'); ?>"<?php if ($this->options->commentsRequireqqnum): ?> required<?php endif; ?> />
+            </p>
     		<p>
                 <label for="mail"<?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>><?php _e('Email'); ?></label>
     			<input type="email" name="mail" id="mail" class="text" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />

@@ -83,6 +83,28 @@ class Widget_Abstract_Users extends Widget_Abstract
     }
 
     /**
+     * 判断QQ号是否存在
+     *
+     * @access public
+     * @param string $qqnum QQ号
+     * @return boolean
+     */
+    public function qqnumExists($qqnum)
+    {
+        $select = $this->db->select()
+        ->from('table.users')
+        ->where('qqnum = ?', $qqnum)
+        ->limit(1);
+
+        if ($this->request->uid) {
+            $select->where('uid <> ?', $this->request->uid);
+        }
+
+        $user = $this->db->fetchRow($select);
+        return $user ? false : true;
+    }
+
+    /**
      * 判断用户昵称是否存在
      *
      * @access public

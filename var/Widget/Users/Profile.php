@@ -54,6 +54,11 @@ class Widget_Users_Profile extends Widget_Users_Edit implements Widget_Interface
         $url = new Typecho_Widget_Helper_Form_Element_Text('url', NULL, NULL, _t('个人主页地址'), _t('此用户的个人主页地址, 请用 <code>http://</code> 开头.'));
         $form->addInput($url);
 
+        /** QQ号 */
+        $qqnum = new Typecho_Widget_Helper_Form_Element_Text('qqnum', NULL, NULL, _t('QQ号 *'), _t('QQ号将作为此用户的重要联系方式.')
+            . '<br />' . _t('请不要与系统中现有的电子邮箱地址重复.'));
+        $form->addInput($qqnum);
+
         /** 电子邮箱地址 */
         $mail = new Typecho_Widget_Helper_Form_Element_Text('mail', NULL, NULL, _t('电子邮箱地址 *'), _t('电子邮箱地址将作为此用户的主要联系方式.')
             . '<br />' . _t('请不要与系统中现有的电子邮箱地址重复.'));
@@ -71,11 +76,13 @@ class Widget_Users_Profile extends Widget_Users_Edit implements Widget_Interface
         $screenName->value($this->user->screenName);
         $url->value($this->user->url);
         $mail->value($this->user->mail);
+        $qqnum->value($this->user->qqnum);
 
         /** 给表单增加规则 */
         $screenName->addRule(array($this, 'screenNameExists'), _t('昵称已经存在'));
         $screenName->addRule('xssCheck', _t('请不要在昵称中使用特殊字符'));
         $url->addRule('url', _t('个人主页地址格式错误'));
+        $qqnum->addRule(array($this, 'qqnumExists'), _t('QQ已经存在'));
         $mail->addRule('required', _t('必须填写电子邮箱'));
         $mail->addRule(array($this, 'mailExists'), _t('电子邮箱地址已经存在'));
         $mail->addRule('email', _t('电子邮箱格式错误'));

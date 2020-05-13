@@ -12,6 +12,18 @@
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
+        <div >
+        <div style="text-align:center;">
+            <div id="qrcodeContent" >
+                <a href='<?php $this->permalink() ?>'><img src="https://nk.uwp.ac.cn/qr/index.php?text= <?php $this->permalink() ?>" alt="<?php $this->title() ?>二维码" width=150 height=150/></a>
+            </div> 
+            <div style="padding:10px;margin-top: -15px;">
+                <span><strong> &nbsp;&nbsp;&nbsp;扫描二维码,在手机阅读！</strong></span>
+            </div>
+            <hr>
+        </div>
+            <style type="text/css">#qrcodeContent{margin-top: 10px;padding:1px;}</style>
+    </div>
         <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
     </article>
 

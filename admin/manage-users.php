@@ -35,18 +35,22 @@ include 'menu.php';
                         <colgroup>
                             <col width="20"/>
                             <col width="6%"/>
-                            <col width="30%"/>
+                            <col width="20%"/>
                             <col width=""/>
-                            <col width="25%"/>
-                            <col width="15%"/>
+                            <col width=""/>
+                            <col width=""/>
+                            <col width=""/>
+                            <col width=""/>
                         </colgroup>
                         <thead>
                             <tr>
-                                <th> </th>
-                                <th> </th>
+                                <th><?php _e('选择'); ?></th>
+                                <th><?php _e('作品数'); ?></th>
                                 <th><?php _e('用户名'); ?></th>
                                 <th><?php _e('昵称'); ?></th>
+                                <th><?php _e('头像'); ?></th>
                                 <th><?php _e('电子邮件'); ?></th>
+                                <th><?php _e('QQ号'); ?></th>
                                 <th><?php _e('用户组'); ?></th>
                             </tr>
                         </thead>
@@ -60,7 +64,9 @@ include 'menu.php';
                                 <a href="<?php $users->permalink(); ?>" title="<?php _e('浏览 %s', $users->screenName); ?>"><i class="i-exlink"></i></a>
                                 </td>
                                 <td><?php $users->screenName(); ?></td>
+                                <td><?php if($users->qqnum): ?><img src="https://q.qlogo.cn/g?b=qq&nk=<?php $users->qqnum(); ?>&s=1" /><?php else: _e('暂无'); endif; ?></td>
                                 <td><?php if($users->mail): ?><a href="mailto:<?php $users->mail(); ?>"><?php $users->mail(); ?></a><?php else: _e('暂无'); endif; ?></td>
+                                <td><?php if($users->qqnum): ?><a href="tencent://Message/?Uin=<?php $users->qqnum(); ?>&amp;websiteName=q-zone.qq.com&amp;Menu=yes"><?php $users->qqnum(); ?></a><?php else: _e('暂无'); endif; ?></td>
                                 <td><?php switch ($users->group) {
                                     case 'administrator':
                                         _e('管理员');
