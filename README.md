@@ -15,9 +15,9 @@
 添加以下代码：
 ~~~
 <p>
-                <label for="qqnum"<?php if ($this->options->commentsRequireqqnum): ?> class="required"<?php endif; ?>><?php _e('QQ号'); ?></label>
-                <input type="text" name="qqnum" id="qqnum" class="text" placeholder="<?php _e('QQ号用于显示头像,空白即不显示'); ?>" value="<?php $this->remember('qqnum'); ?>"<?php if ($this->options->commentsRequireqqnum): ?> required <?php endif; ?> />
-            </p>
+    <label for="qqnum"<?php if ($this->options->commentsRequireqqnum): ?> class="required"<?php endif; ?>><?php _e('QQ号'); ?></label>
+    <input type="text" name="qqnum" id="qqnum" class="text" placeholder="<?php _e('QQ号用于显示头像,空白即不显示'); ?>" value="<?php $this->remember('qqnum'); ?>"<?php if ($this->options->commentsRequireqqnum): ?> required <?php endif; ?> />
+</p>
 ~~~
 
 
