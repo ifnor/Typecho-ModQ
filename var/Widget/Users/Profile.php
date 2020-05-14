@@ -54,9 +54,9 @@ class Widget_Users_Profile extends Widget_Users_Edit implements Widget_Interface
         $url = new Typecho_Widget_Helper_Form_Element_Text('url', NULL, NULL, _t('个人主页地址'), _t('此用户的个人主页地址, 请用 <code>http://</code> 开头.'));
         $form->addInput($url);
 
-        /** QQ号 */
+        /** QQ号*/
         $qqnum = new Typecho_Widget_Helper_Form_Element_Text('qqnum', NULL, NULL, _t('QQ号 *'), _t('QQ号将作为此用户的重要联系方式.')
-            . '<br />' . _t('请不要与系统中现有的电子邮箱地址重复.'));
+            . '<br />' . _t('请不要与系统中现有的QQ号重复.'));
         $form->addInput($qqnum);
 
         /** 电子邮箱地址 */
@@ -75,8 +75,8 @@ class Widget_Users_Profile extends Widget_Users_Edit implements Widget_Interface
 
         $screenName->value($this->user->screenName);
         $url->value($this->user->url);
-        $mail->value($this->user->mail);
         $qqnum->value($this->user->qqnum);
+        $mail->value($this->user->mail);
 
         /** 给表单增加规则 */
         $screenName->addRule(array($this, 'screenNameExists'), _t('昵称已经存在'));
@@ -270,7 +270,7 @@ class Widget_Users_Profile extends Widget_Users_Edit implements Widget_Interface
         }
 
         /** 取出数据 */
-        $user = $this->request->from('mail', 'screenName', 'url');
+        $user = $this->request->from('mail', 'screenName', 'url', 'qqnum');
         $user['screenName'] = empty($user['screenName']) ? $user['name'] : $user['screenName'];
 
         /** 更新数据 */

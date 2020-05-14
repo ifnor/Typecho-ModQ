@@ -213,6 +213,7 @@ Typecho_Date::setTimezoneOffset($options->timezone);
             "name" varchar(32) default NULL ,
             "password" varchar(64) default NULL ,
             "mail" varchar(150) default NULL ,
+            "qqnum" text(50) default NULL ,
             "url" varchar(150) default NULL ,
             "screenName" varchar(32) default NULL ,
             "created" int(10) default \'0\' ,
@@ -220,14 +221,15 @@ Typecho_Date::setTimezoneOffset($options->timezone);
             "logged" int(10) default \'0\' ,
             "group" varchar(16) default \'visitor\' ,
             "authCode" varchar(64) default NULL)', Typecho_Db::WRITE);
-                    $db->query('INSERT INTO ' . $prefix . 'users_' . $uuid . ' ("uid", "name", "password", "mail", "url"
-                    , "screenName", "created", "activated", "logged", "group", "authCode") SELECT "uid", "name", "password", "mail", "url"
+                    $db->query('INSERT INTO ' . $prefix . 'users_' . $uuid . ' ("uid", "name", "password", "mail", "qqnum", "url"
+                    , "screenName", "created", "activated", "logged", "group", "authCode") SELECT "uid", "name", "password", "mail", "qqnum", "url"
                     , "screenName", "created", "activated", "logged", "group", "authCode" FROM ' . $prefix . 'users', Typecho_Db::WRITE);
                     $db->query('DROP TABLE  ' . $prefix . 'users', Typecho_Db::WRITE);
                     $db->query('CREATE TABLE ' . $prefix . 'users ( "uid" INTEGER NOT NULL PRIMARY KEY,
             "name" varchar(32) default NULL ,
             "password" varchar(64) default NULL ,
             "mail" varchar(150) default NULL ,
+            "qqnum" text(50) default NULL ,
             "url" varchar(150) default NULL ,
             "screenName" varchar(32) default NULL ,
             "created" int(10) default \'0\' ,
@@ -239,6 +241,7 @@ Typecho_Date::setTimezoneOffset($options->timezone);
                     $db->query('DROP TABLE  ' . $prefix . 'users_' . $uuid, Typecho_Db::WRITE);
                     $db->query('CREATE UNIQUE INDEX ' . $prefix . 'users_name ON ' . $prefix . 'users ("name")', Typecho_Db::WRITE);
                     $db->query('CREATE UNIQUE INDEX ' . $prefix . 'users_mail ON ' . $prefix . 'users ("mail")', Typecho_Db::WRITE);
+                    $db->query('CREATE UNIQUE INDEX ' . $prefix . 'users_qqnum ON ' . $prefix . 'users ("qqnum")', Typecho_Db::WRITE);
                     $db->flushPool();
 
                     break;
@@ -1294,6 +1297,7 @@ Typecho_Date::setTimezoneOffset($options->timezone);
 "authorId" int(10) default \'0\' ,
 "ownerId" int(10) default \'0\' ,
 "mail" varchar(150) default NULL ,
+"qqnum" text(50) default NULL ,
 "url" varchar(150) default NULL ,
 "ip" varchar(64) default NULL ,
 "agent" varchar(511) default NULL ,
@@ -1310,6 +1314,7 @@ Typecho_Date::setTimezoneOffset($options->timezone);
 "authorId" int(10) default \'0\' ,
 "ownerId" int(10) default \'0\' ,
 "mail" varchar(150) default NULL ,
+"qqnum" text(50) default NULL ,
 "url" varchar(150) default NULL ,
 "ip" varchar(64) default NULL ,
 "agent" varchar(511) default NULL ,
@@ -1358,6 +1363,7 @@ Typecho_Date::setTimezoneOffset($options->timezone);
 "authorId" int(10) default \'0\' ,
 "ownerId" int(10) default \'0\' ,
 "mail" varchar(150) default NULL ,
+"qqnum" text(50) default NULL ,
 "url" varchar(255) default NULL ,
 "ip" varchar(64) default NULL ,
 "agent" varchar(511) default NULL ,
@@ -1374,6 +1380,7 @@ Typecho_Date::setTimezoneOffset($options->timezone);
 "authorId" int(10) default \'0\' ,
 "ownerId" int(10) default \'0\' ,
 "mail" varchar(150) default NULL ,
+"qqnum" text(50) default NULL ,
 "url" varchar(255) default NULL ,
 "ip" varchar(64) default NULL ,
 "agent" varchar(511) default NULL ,

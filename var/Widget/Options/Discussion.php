@@ -94,6 +94,15 @@ class Widget_Options_Discussion extends Widget_Abstract_Options implements Widge
             $commentsShowOptionsValue[] = 'commentsAvatar';
         }
 
+
+        if ($this->options->commentsqqnum) {
+            $commentsShowOptionsValue[] = 'commentsqqnum';
+        }
+
+        if ($this->options->commentsqqnum) {
+            $commentsShowOptionsValue[] = 'commentsqqnum';
+        }
+
         if ($this->options->commentsPageBreak) {
             $commentsShowOptionsValue[] = 'commentsPageBreak';
         }
@@ -111,6 +120,7 @@ class Widget_Options_Discussion extends Widget_Abstract_Options implements Widge
             'commentsRequireModeration'     =>  _t('所有评论必须经过审核'),
             'commentsWhitelist'     =>  _t('评论者之前须有评论通过了审核'),
             'commentsRequireMail'           =>  _t('必须填写邮箱'),
+            'commentsRequireqqnum'           =>  _t('必须填写QQ'),
             'commentsRequireURL'            =>  _t('必须填写网址'),
             'commentsCheckReferer'          =>  _t('检查评论来源页 URL 是否与文章链接一致'),
             'commentsAntiSpam'              =>  _t('开启反垃圾保护'),
@@ -133,6 +143,10 @@ class Widget_Options_Discussion extends Widget_Abstract_Options implements Widge
 
         if ($this->options->commentsRequireMail) {
             $commentsPostOptionsValue[] = 'commentsRequireMail';
+        }
+
+        if ($this->options->commentsRequireqqnum) {
+            $commentsPostOptionsValue[] = 'commentsRequireqqnum';
         }
 
         if ($this->options->commentsRequireURL) {
@@ -188,8 +202,8 @@ class Widget_Options_Discussion extends Widget_Abstract_Options implements Widge
             $this->response->goBack();
         }
 
-        $settings = $this->request->from('commentDateFormat', 'commentsListSize', 'commentsPageSize', 'commentsPageDisplay', 'commentsAvatar',
-                'commentsOrder', 'commentsMaxNestingLevels', 'commentsUrlNofollow', 'commentsPostTimeout', 'commentsUniqueIpInterval', 'commentsWhitelist', 'commentsRequireMail', 'commentsAvatarRating',
+        $settings = $this->request->from('commentDateFormat', 'commentsListSize', 'commentsPageSize', 'commentsPageDisplay', 'commentsAvatar','commentsqqnum',
+                'commentsOrder', 'commentsMaxNestingLevels', 'commentsUrlNofollow', 'commentsPostTimeout', 'commentsUniqueIpInterval', 'commentsWhitelist', 'commentsRequireMail',  'commentsRequireqqnum','commentsAvatarRating',
                 'commentsPostTimeout', 'commentsPostInterval', 'commentsRequireModeration', 'commentsRequireURL', 'commentsHTMLTagAllowed', 'commentsStopWords', 'commentsIpBlackList');
         $settings['commentsShow'] = $this->request->getArray('commentsShow');
         $settings['commentsPost'] = $this->request->getArray('commentsPost');
@@ -199,6 +213,7 @@ class Widget_Options_Discussion extends Widget_Abstract_Options implements Widge
         $settings['commentsShowUrl'] = $this->isEnableByCheckbox($settings['commentsShow'], 'commentsShowUrl');
         $settings['commentsUrlNofollow'] = $this->isEnableByCheckbox($settings['commentsShow'], 'commentsUrlNofollow');
         $settings['commentsAvatar'] = $this->isEnableByCheckbox($settings['commentsShow'], 'commentsAvatar');
+        $settings['commentsqqnum'] = $this->isEnableByCheckbox($settings['commentsShow'], 'commentsqqnum');
         $settings['commentsPageBreak'] = $this->isEnableByCheckbox($settings['commentsShow'], 'commentsPageBreak');
         $settings['commentsThreaded'] = $this->isEnableByCheckbox($settings['commentsShow'], 'commentsThreaded');
 
@@ -212,6 +227,7 @@ class Widget_Options_Discussion extends Widget_Abstract_Options implements Widge
         $settings['commentsRequireModeration'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsRequireModeration');
         $settings['commentsWhitelist'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsWhitelist');
         $settings['commentsRequireMail'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsRequireMail');
+        $settings['commentsRequireqqnum'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsRequireqqnum');
         $settings['commentsRequireURL'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsRequireURL');
         $settings['commentsCheckReferer'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsCheckReferer');
         $settings['commentsAntiSpam'] = $this->isEnableByCheckbox($settings['commentsPost'], 'commentsAntiSpam');

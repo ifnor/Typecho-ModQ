@@ -39,14 +39,14 @@ class Widget_Backup extends Widget_Abstract_Options implements Widget_Interface_
         ),
         'comments'  =>  array(
             'coid', 'cid', 'created', 'author', 'authorId', 'ownerId',
-            'mail', 'url', 'ip', 'agent', 'text', 'type', 'status', 'parent'
+            'mail', 'qqnum', 'url', 'ip', 'agent', 'text', 'type', 'status', 'parent'
         ),
         'metas'     =>  array(
             'mid', 'name', 'slug', 'type', 'description', 'count', 'order', 'parent'
         ),
         'relationships' =>  array('cid', 'mid'),
         'users'     =>  array(
-            'uid', 'name', 'password', 'mail', 'url', 'screenName', 'created', 'activated', 'logged', 'group', 'authCode'
+            'uid', 'name', 'password', 'mail', 'qqnum', 'url', 'screenName', 'created', 'activated', 'logged', 'group', 'authCode'
         ),
         'fields'    =>  array(
             'cid', 'name', 'type', 'str_value', 'int_value', 'float_value'

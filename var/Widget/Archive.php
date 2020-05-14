@@ -1881,7 +1881,7 @@ class Widget_Archive extends Widget_Abstract_Contents
     public function remember($cookieName, $return = false)
     {
         $cookieName = strtolower($cookieName);
-        if (!in_array($cookieName, array('author', 'mail', 'url'))) {
+        if (!in_array($cookieName, array('author', 'mail', 'qqnum', 'url'))) {
             return '';
         }
     
@@ -2080,7 +2080,8 @@ class Widget_Archive extends Widget_Abstract_Contents
                     'author'    =>  (object) array(
                         'screenName'  =>  $comments->author,
                         'url'         =>  $comments->url,
-                        'mail'        =>  $comments->mail
+                        'mail'        =>  $comments->mail,
+                        'qqnum'        =>  $comments->qqnum
                     ),
                     'excerpt'   =>  strip_tags($comments->content),
                     'suffix'    =>  $suffix

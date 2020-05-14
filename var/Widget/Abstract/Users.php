@@ -249,8 +249,8 @@ class Widget_Abstract_Users extends Widget_Abstract
     {
         return $this->db->query($condition->delete('table.users'));
     }
-
-    /**
+/*
+    *
      * 调用gravatar输出用户头像
      *
      * @access public
@@ -259,10 +259,28 @@ class Widget_Abstract_Users extends Widget_Abstract
      * @param string $default 默认输出头像
      * @param string $class 默认css class
      * @return void
-     */
+     
     public function gravatar($size = 40, $rating = 'X', $default = NULL, $class = NULL)
     {
         $url = Typecho_Common::gravatarUrl($this->mail, $size, $rating, $default, $this->request->isSecure());
+        echo '<img' . (empty($class) ? '' : ' class="' . $class . '"') . ' src="' . $url . '" alt="' .
+        $this->screenName . '" width="' . $size . '" height="' . $size . '" />';
+    }
+}*/
+
+/**
+     * 调用QQ输出用户头像
+     *
+     * @access public
+     * @param integer $size 头像尺寸
+     * @param string $rating 头像评级
+     * @param string $default 默认输出头像
+     * @param string $class 默认css class
+     * @return void
+     */
+    public function gravatar($size = 100, $rating = 'X', $default = NULL, $class = NULL)
+    {
+        $url = Typecho_Common::gravatarUrl($this->QQNUM, $size, $rating, $default, $this->request->isSecure());
         echo '<img' . (empty($class) ? '' : ' class="' . $class . '"') . ' src="' . $url . '" alt="' .
         $this->screenName . '" width="' . $size . '" height="' . $size . '" />';
     }

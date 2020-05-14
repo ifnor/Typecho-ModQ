@@ -104,6 +104,11 @@ class Widget_Users_Edit extends Widget_Abstract_Users implements Widget_Interfac
             . '<br />' . _t('请不要与系统中现有的电子邮箱地址重复.'));
         $form->addInput($mail);
 
+        /**QQ号*/
+        $qqnum = new Typecho_Widget_Helper_Form_Element_Text('qqnum', NULL, NULL, _t('QQ号 *'), _t('QQ号将作为此用户的重要联系方式.')
+            . '<br />' . _t('请不要与系统中现有的QQ号重复.'));
+        $form->addInput($qqnum);
+
         /** 用户昵称 */
         $screenName = new Typecho_Widget_Helper_Form_Element_Text('screenName', NULL, NULL, _t('用户昵称'), _t('用户昵称可以与用户名不同, 用于前台显示.')
             . '<br />' . _t('如果你将此项留空, 将默认使用用户名.'));
@@ -150,6 +155,7 @@ class Widget_Users_Edit extends Widget_Abstract_Users implements Widget_Interfac
             $screenName->value($this->screenName);
             $url->value($this->url);
             $mail->value($this->mail);
+            $qqnum->value($this->qqnum);
             $group->value($this->group);
             $do->value('update');
             $uid->value($this->uid);
@@ -171,6 +177,7 @@ class Widget_Users_Edit extends Widget_Abstract_Users implements Widget_Interfac
             $url->addRule('url', _t('个人主页地址格式错误'));
             $mail->addRule('required', _t('必须填写电子邮箱'));
             $mail->addRule(array($this, 'mailExists'), _t('电子邮箱地址已经存在'));
+            $qqnum->addRule(array($this, 'qqnumExists'), _t('QQ号已经存在'));
             $mail->addRule('email', _t('电子邮箱格式错误'));
             $password->addRule('minLength', _t('为了保证账户安全, 请输入至少六位的密码'), 6);
             $confirm->addRule('confirm', _t('两次输入的密码不一致'), 'password');
@@ -209,7 +216,7 @@ class Widget_Users_Edit extends Widget_Abstract_Users implements Widget_Interfac
         $hasher = new PasswordHash(8, true);
 
         /** 取出数据 */
-        $user = $this->request->from('name', 'mail', 'screenName', 'password', 'url', 'group');
+        $user = $this->request->from('name', 'mail', 'qqnum','screenName', 'password', 'url', 'group');
         $user['screenName'] = empty($user['screenName']) ? $user['name'] : $user['screenName'];
         $user['password'] = $hasher->HashPassword($user['password']);
         $user['created'] = $this->options->time;
@@ -240,7 +247,7 @@ class Widget_Users_Edit extends Widget_Abstract_Users implements Widget_Interfac
         }
 
         /** 取出数据 */
-        $user = $this->request->from('mail', 'screenName', 'password', 'url', 'group');
+        $user = $this->request->from('mail', 'qqnum','screenName', 'password', 'url', 'group');
         $user['screenName'] = empty($user['screenName']) ? $user['name'] : $user['screenName'];
         if (empty($user['password'])) {
             unset($user['password']);

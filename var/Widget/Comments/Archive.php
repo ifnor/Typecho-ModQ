@@ -213,6 +213,7 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
 
         $commentsAuthor = Typecho_Cookie::get('__typecho_remember_author');
         $commentsMail = Typecho_Cookie::get('__typecho_remember_mail');
+        $commentsqqnum = Typecho_Cookie::get('__typecho_remember_qqnum');
         $select = $this->select()->where('table.comments.cid = ?', $this->parameter->parentId)
         ->where('table.comments.status = ? OR (table.comments.author = ? AND table.comments.mail = ? AND table.comments.status = ?)', 'approved', $commentsAuthor, $commentsMail, 'waiting');
         $threadedSelect = NULL;
@@ -410,7 +411,7 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
             'dateFormat'    =>  $this->options->commentDateFormat,
             'replyWord'     =>  _t('回复'),
             'commentStatus' =>  _t('您的评论正等待审核!'),
-            'avatarSize'    =>  32,
+            'avatarSize'    =>  100,
             'defaultAvatar' =>  NULL
         ));
         $this->pluginHandle()->trigger($plugged)->listComments($this->_singleCommentOptions, $this);

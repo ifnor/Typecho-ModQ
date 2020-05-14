@@ -707,6 +707,7 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
             'registered'    => new IXR_Date($this->options->timezone +  $this->user->created),
             'bio'           => '',
             'email'         => $this->user->mail,
+            'qqnum'         => $this->user->qqnum,
             'nickname'      => $this->user->screenName,
             'url'           => $this->user->url,
             'display_name'  => $this->user->screenName,
@@ -1028,6 +1029,7 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
 			'author'				=> $comment->author,
 			'author_url'			=> $comment->url,
 			'author_email'			=> $comment->mail,
+            'author_qqnum'          => $comment->qqnum,
 			'author_ip'				=> $comment->ip,
 			'type'					=> $comment->type
         );
@@ -1088,6 +1090,7 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
                 'author'				=> $comments->author,
                 'author_url'			=> $comments->url,
                 'author_email'			=> $comments->mail,
+                'author_qqnum'          => $comments->qqnum,
                 'author_ip'				=> $comments->ip,
                 'type'					=> $comments->type
             );
@@ -1176,6 +1179,11 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
             $input['mail'] = $struct['author_email'];
         }
         
+
+        if (isset($struct['author_qqnum'])) {
+            $input['qqnum'] = $struct['author_qqnum'];
+        }
+
         $result = $commentWidget->update((array) $input, $where);
         
         if (!$result) {
@@ -1228,6 +1236,10 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
             $input['mail'] = $struct['author_email'];
         }
         
+        if (isset($struct['comment_author_qqnum'])) {
+            $input['qqnum'] = $struct['author_qqnum'];
+        }
+
         if (isset($struct['comment_author_url'])) {
             $input['url'] = $struct['author_url'];
         }
@@ -1896,6 +1908,7 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
             'userid'    => $this->user->uid,
             'url'       => $this->user->url,
             'email'     => $this->user->mail,
+            'qqnum'     => $this->user->qqnum,
             'lastname'  => '',
             'firstname' => ''
         );

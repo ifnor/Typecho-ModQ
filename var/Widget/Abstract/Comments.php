@@ -393,7 +393,7 @@ class Widget_Abstract_Comments extends Widget_Abstract
      * @param integer $size 头像尺寸
      * @param string $default 默认输出头像
      * @return void
-     */
+     
     public function gravatar($size = 32, $default = NULL)
     {
         if ($this->options->commentsAvatar && 'comment' == $this->type) {
@@ -401,11 +401,29 @@ class Widget_Abstract_Comments extends Widget_Abstract
             
             $this->pluginHandle(__CLASS__)->trigger($plugged)->gravatar($size, $rating, $default, $this);
             if (!$plugged) {
-                $url = Typecho_Common::gravatarUrl($this->qqnum, $size, $rating, $default, $this->request->isSecure());
+                $url = Typecho_Common::gravatarUrl($this->mail, $size, $rating, $default, $this->request->isSecure());
                 echo '<img class="avatar" src="' . $url . '" alt="' .
                 $this->author . '" width="' . $size . '" height="' . $size . '" />';
             }
         }
+    }*/
+
+    /**
+     * 调用QQ输出用户头像
+     *
+     * @access public
+     * @param integer $size 头像尺寸
+     * @param string $default 默认输出头像
+     * @return void
+     */
+    public function gravatar($size = 1, $default = NULL)
+    {
+            $this->pluginHandle(__CLASS__)->trigger($plugged)->gravatar($size, $rating, $default, $this);
+            if (!$plugged) {
+                $url = Typecho_Common::gravatarUrl($this->qqnum, $size, $rating, $default, $this->request->isSecure());
+                echo '<img class="avatar" src="' . $url . '" alt="' .
+                $this->qqnum . '" width="' . $size . '" height="' . $size . '" />';
+            }
     }
 
     /**

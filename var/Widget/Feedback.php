@@ -68,6 +68,10 @@ class Widget_Feedback extends Widget_Abstract_Comments implements Widget_Interfa
         $validator->addRule('author', array($this, 'requireUserLogin'), _t('您所使用的用户名已经被注册,请登录后再次提交'));
         $validator->addRule('author', 'maxLength', _t('用户名最多包含150个字符'), 150);
 
+        if ($this->options->commentsRequireqqnum && !$this->user->hasLogin()) {
+            $validator->addRule('qqnum', 'required', _t('必须填写QQ号'));
+        }
+
         if ($this->options->commentsRequireMail && !$this->user->hasLogin()) {
             $validator->addRule('mail', 'required', _t('必须填写电子邮箱地址'));
         }
@@ -90,6 +94,7 @@ class Widget_Feedback extends Widget_Abstract_Comments implements Widget_Interfa
             /** Anti-XSS */
             $comment['author'] = $this->request->filter('trim')->author;
             $comment['mail'] = $this->request->filter('trim')->mail;
+            $comment['qqnum'] = $this->request->filter('trim')->qqnum;
             $comment['url'] = $this->request->filter('trim')->url;
 
             /** 修正用户提交的url */
@@ -103,10 +108,12 @@ class Widget_Feedback extends Widget_Abstract_Comments implements Widget_Interfa
             $expire = $this->options->time + $this->options->timezone + 30*24*3600;
             Typecho_Cookie::set('__typecho_remember_author', $comment['author'], $expire);
             Typecho_Cookie::set('__typecho_remember_mail', $comment['mail'], $expire);
+            Typecho_Cookie::set('__typecho_remember_qqnum', $comment['qqnum'], $expire);
             Typecho_Cookie::set('__typecho_remember_url', $comment['url'], $expire);
         } else {
             $comment['author'] = $this->user->screenName;
             $comment['mail'] = $this->user->mail;
+            $comment['qqnum'] = $this->user->qqnum;
             $comment['url'] = $this->user->url;
 
             /** 记录登录用户的id */
