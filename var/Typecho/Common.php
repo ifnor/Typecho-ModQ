@@ -1021,8 +1021,10 @@ EOF;
 
         if (!empty($qqnum)) {
             $url .= $qqnum;
+            $url .= '&s=' . $size;
+        }else{
+            $url = "https://src.ifdo.ml/images/noheadphoto.png";
         }
-        $url .= '&s=' . $size;
         return $url;
     }
 
