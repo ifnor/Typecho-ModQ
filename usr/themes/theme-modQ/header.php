@@ -16,11 +16,11 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
     <script src="https://js.ifdo.ml/info.js"></script>
-    <?php include('style.php');?>
+    
     <!-- 使用url函数转换相关路径 -->
     <!-- <link rel="stylesheet" href="<?php $this->options->themeUrl('normalize.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">-->
-    <!-- <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">  -->
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>"> 
    
 
     <!--[if lt IE 9]>
