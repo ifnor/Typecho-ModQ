@@ -1,6 +1,18 @@
 // 函数 -->
-
-
+//photoshow
+		$(document).ready(function(){
+			$(".post-content img").attr('title','点击放大');
+			$(".post-content img").click(function(){
+				let photo = this.src;
+				// console.log(photo);
+				$("header").after('<span class="photoshow"></span>');
+				$(".photoshow").prepend('<button>X</button>');
+				$(".photoshow").append('<span><img src="'+photo+'"alt="'+photo+'"></img></span>');
+					$(".photoshow").click(function(){
+					$(".photoshow").remove();
+					});
+			})
+		})
 function mOut(bubble){
 	bubble.innerHTML='';
 	mpimg.innerHTML='';
@@ -24,7 +36,20 @@ function wxxmp(wxxmp){
 function wxmp(wxmp){
 	mpimg.innerHTML='<img src="//ifdo.ml/pub.png" style="width:150px;height:150px;">';
 }
+function qqmp(qqmp){
+		mpimg.innerHTML='<img src="//ifdo.ml/qqmp.png" style="width:150px;height:150px;"><br><p>QQ小程序</p><br>'
+	}
+	function wxxmp(wxxmp){
+		mpimg.innerHTML='<img src="//ifdo.ml/wxmp.png"" style="width:150px;height:150px;"><br><p>微信小程序</p><br>'
+	}
+	function wxmp(wxmp){
+		mpimg.innerHTML='<img src="//ifdo.ml/pub.png" style="width:150px;height:150px;"><br><p>微信公众号</p><br>'
+	}
 
+	function turnup(){
+		// 返回顶部
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	}
 
 function getOperationSys() {
     var OS = '';
@@ -69,6 +94,10 @@ if (OS!='Windows'||w<1220) {
 window.addEventListener("resize", displayWindowSize);
 // 第一次调用该函数
 displayWindowSize();
+//lastpage
+    $(document).ready(function(){
+    	$(".lastpage a,.right-comments a").attr('color',"blue");
+    })
 
 
 
