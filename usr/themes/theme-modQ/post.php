@@ -30,7 +30,7 @@
 			</div>
 			<div class="post-content" itemprop="articleBody">
 				<?php $this->content(); ?>
-				<img class="img" src="https://ifdo.ml/bg.png" alt="" title="首图图大小：宽680px  高230px" hidden="1" />
+				<img class="img" src="https://ifdo.cool/bg.png" alt="" title="首图图大小：宽680px  高230px" hidden="1" />
 			</div>
 			<div style="text-align:center;">
 				<div id="qrcodeContent" >

@@ -5,7 +5,7 @@
  * @package Typecho-modQ 
  * @author 即简 1787990728
  * @version 0.0.8（test）
- * @link http://ifdo.ml
+ * @link http://ifdo.cool
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');

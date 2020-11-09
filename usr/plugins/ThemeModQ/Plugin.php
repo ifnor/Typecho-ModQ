@@ -6,7 +6,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * @package ThemeModQ
  * @author ceshon
  * @version 0.0.1(test)
- * @link https://ifdo.ml
+ * @link https://ifdo.cool
  */
 class ThemeModQ_Plugin implements Typecho_Plugin_Interface
 {

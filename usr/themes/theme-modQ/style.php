@@ -108,13 +108,13 @@ displayWindowSize();
 </script>
 <script type="text/javascript">
 	function qqmp(qqmp){
-		mpimg.innerHTML='<img src="//ifdo.ml/qqmp.png" style="width:150px;height:150px;"><br><p>QQ小程序</p><br>'
+		mpimg.innerHTML='<img src="//ifdo.cool/qqmp.png" style="width:150px;height:150px;"><br><p>QQ小程序</p><br>'
 	}
 	function wxxmp(wxxmp){
-		mpimg.innerHTML='<img src="//ifdo.ml/wxmp.png"" style="width:150px;height:150px;"><br><p>微信小程序</p><br>'
+		mpimg.innerHTML='<img src="//ifdo.cool/wxmp.png"" style="width:150px;height:150px;"><br><p>微信小程序</p><br>'
 	}
 	function wxmp(wxmp){
-		mpimg.innerHTML='<img src="//ifdo.ml/pub.png" style="width:150px;height:150px;"><br><p>微信公众号</p><br>'
+		mpimg.innerHTML='<img src="//ifdo.cool/pub.png" style="width:150px;height:150px;"><br><p>微信公众号</p><br>'
 	}
 
 	function turnup(){
