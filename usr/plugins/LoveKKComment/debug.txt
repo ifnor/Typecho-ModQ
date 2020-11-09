@@ -1,0 +1,726 @@
+[SMTP] 2019-12-11 13:35:00: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4396:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-11 13:34:59
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=15ef745b25961ad4ec2b053aeeb55acc&m=ceshon%40foxmail.com&e=1576043099" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=15ef745b25961ad4ec2b053aeeb55acc&m=ceshon%40foxmail.com&e=1576043099</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"w2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:0;; 错误信息: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+-------------------------------------------
+
+
+[SMTP] 2019-12-11 13:38:33: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4396:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-11 13:38:32
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=cc41b02ef359fbc9428560163cd608d3&m=ceshon%40foxmail.com&e=1576043312" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=cc41b02ef359fbc9428560163cd608d3&m=ceshon%40foxmail.com&e=1576043312</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2019-12-13 01:08:18: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4396:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-13 01:08:17
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=e0b8025d2f791b2491b9a89460468178&m=ceshon%40foxmail.com&e=1576171097" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=e0b8025d2f791b2491b9a89460468178&m=ceshon%40foxmail.com&e=1576171097</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2019-12-13 01:11:10: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4287:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-13 01:11:09
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=6823ff286c78ebbe81b3265464a7c38c&m=ceshon%40foxmail.com&e=1576171269" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">{找回密码}</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2019-12-13 01:12:08: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:14:"ceshon@163.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4273:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@163.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@163.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-13 01:12:07
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=2cc1efe19e5898f55ddebeb2e22e1666&m=ceshon%40163.com&e=1576171327" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2019-12-14 03:30:00: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:17:"2982501667@qq.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4282:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">2982501667@qq.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2982501667@qq.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-14 03:29:58
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=920745a8dcbc58f89b6f0c72d1bae994&m=2982501667%40qq.com&e=1576265998" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2019-12-14 03:30:28: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:17:"2982501667@qq.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4282:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">2982501667@qq.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2982501667@qq.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-14 03:30:27
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=b82cff26834be3e84ff8a15167bfebbb&m=2982501667%40qq.com&e=1576266027" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2019-12-14 03:30:54: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4285:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2019-12-14 03:30:53
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=b3a159b49772efa3acc0b5d70f54a3a4&m=ceshon%40foxmail.com&e=1576266053" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2020-01-19 05:50:04: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4285:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2020-01-19 05:50:02
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=f4d43e9d2912b5db3ccbd65b18cea130&m=ceshon%40foxmail.com&e=1579384802" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:7:"465/994";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2020-02-27 16:04:45: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:18:"ceshon@foxmail.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4285:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">ceshon@foxmail.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        ceshon@foxmail.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2020-02-27 16:04:43
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=d65122719ba7792df3e821296479febc&m=ceshon%40foxmail.com&e=1582791283" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:7:"465/994";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
+[SMTP] 2020-03-23 16:35:30: 
+data: a:12:{s:8:"fromName";s:6:"即简";s:4:"from";s:14:"ceshon@163.com";s:2:"to";s:13:"iqqdog@qq.com";s:7:"replyTo";s:14:"ceshon@163.com";s:7:"subject";s:44:"您在 [即简] 提交的密码找回申请!";s:4:"html";s:4270:"<div style="background:#ececec;width: 100%;padding: 50px 0;text-align:center;">
+    <div style="background:#fff;width:750px;text-align:left;position:relative;margin:0 auto;font-size:14px;line-height:1.5;">
+        <div style="zoom:1;padding:25px 40px;background:#518bcb; border-bottom:1px solid #467ec3;">
+            <h1 style="color:#fff; font-size:25px;line-height:30px; margin:0;"><a href="https://nk.uwp.ac.cn/"
+                                                                                  style="text-decoration: none;color: #FFF;">您在
+                [即简] 的密码找回申请!</a></h1>
+        </div>
+
+        <div style="padding:35px 40px 30px;">
+            <h2 style="font-size:18px;margin:5px 0;"><span
+                    style="color: rgb(186, 76, 50); font-family:微软雅黑, verdana, arial; line-height: 23.3999996185303px;">iqqdog@qq.com</span>,
+                您好!</h2>
+
+            <p style="color:#313131;line-height:20px;font-size:15px;margin:20px 0;">您在 [即简] 提交了找回密码申请,
+                请核对下方表内信息并点击链接修改密码：</p>
+
+            <table cellspacing="0"
+                   style="font-size:14px;text-align:center;border:1px solid #ccc;table-layout:fixed;width:500px;">
+                <thead>
+                <tr>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="280px;">邮箱地址
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="270px;">申请时间
+                    </th>
+                    <th style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#a0a0a0;background:#eee;border-color:#dfdfdf;"
+                        width="110px;">操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        iqqdog@qq.com
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        2020-03-23 16:35:25
+                    </td>
+                    <td style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                        <a href="https://nk.uwp.ac.cn/action/lovekkcomment?reset=true&t=edeeabf10423d329df46bfb79577c155&m=iqqdog%40qq.com&e=1584953125" style="color:#1E5494;text-decoration:none;vertical-align:middle;"
+                           target="_blank">找回密码</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="padding:5px 0;text-indent:8px;border:1px solid #eee;border-width:0 1px 1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#FF0000;font-weight:bold">
+                        重置密码链接有效时间为 &quot;10&quot; 分钟, 请在此时间内进行密码重置
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            &nbsp;
+
+            <div style="font-size:13px;color:#a0a0a0;padding-top:10px">请注意：此邮件由&nbsp;<a href="https://nk.uwp.ac.cn/" target="_blank"
+                                                                                        title="即简">即简</a>&nbsp;自动发送，请勿直接回复。<br/>
+                若此邮件不是您请求的，请忽略并删除！
+            </div>
+        </div>
+    </div>
+</div>";s:9:"smtp_host";s:12:"smtp.163.com";s:9:"smtp_port";s:3:"465";s:9:"smtp_user";s:14:"ceshon@163.com";s:9:"smtp_pass";s:11:"k2024002112";s:9:"smtp_auth";a:1:{i:0;s:6:"enable";}s:11:"smtp_secure";s:3:"ssl";}
+
+邮件发送返回数据：b:1;; 错误信息: 
+-------------------------------------------
+
+
