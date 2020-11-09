@@ -26,7 +26,13 @@
 
 2.对于设置里面，主页里面不显示左上角图片的，需要进 后台->控制台->外观设置->设置外观-> 站点logo地址 
 这里输入图片链接即可
+<<<<<<< HEAD
 ![setting head image](https://src.ifdo.cool/images/typechomodqheadsetting.png)
+=======
+![setting head image](https://src.ifdo.cool/images/typechomodqheadsetting.png)
+
+
+>>>>>>> ed5f0fbfa485974f4907dfeed2bf3f16aabcda5e
 
 欢迎提交bug
 =======
