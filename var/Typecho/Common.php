@@ -1023,7 +1023,7 @@ EOF;
             $url .= $qqnum;
             $url .= '&s=' . $size;
         }else{
-            $url = "https://src.ifdo.cool/images/noheadphoto.png";
+            $url = "https://src.ifdo.ml/images/noheadphoto.png";
         }
         return $url;
     }
